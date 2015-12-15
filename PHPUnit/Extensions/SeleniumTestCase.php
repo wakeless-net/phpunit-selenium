@@ -1106,7 +1106,7 @@ abstract class PHPUnit_Extensions_SeleniumTestCase extends PHPUnit_Framework_Tes
      *
      * @param Exception $e
      */
-    protected function onNotSuccessfulTest(Exception $e)
+    protected function onNotSuccessfulTest($e)
     {
         if (!$this->serverRunning) {
             throw $e;
